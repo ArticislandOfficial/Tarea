@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea 150622 </title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="row g-3">
+        <h1>Tarea 150622</h1>
+        <div class="col-auto">
+          <button onclick="formValidacion()" class="btn btn-success mb-3">
+            Verificar formulario
+          </button>
+          <!-- <button onclick="readBooks()" class="btn btn-warning mb-3">
+            Read
+          </button>
+          <button onclick="updateBook()" class="btn btn-primary mb-3">
+            Update
+          </button>
+          <button onclick="deleteBook()" class="btn btn-danger mb-3">
+            Delete
+          </button> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="form">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nombre</label>
+
+        <input
+          id="name"
+          type="text"
+          class="form-control"
+          id="pimenombre"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <div id="msgName" ></div>
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Apellido</label>
+
+        <input
+          id="lastname"
+          type="text"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div id="msgApellido" ></div>
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Edad</label>
+
+        <input
+          id="edad"
+          type="number"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+
+        <input
+          id="email"
+          type="text"
+          class="form-control"
+          id="pimenombre"
+          aria-describedby="emailHelp"
+        />
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="fetch.js"></script>
+  </body>
+</html>
