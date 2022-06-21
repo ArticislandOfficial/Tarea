@@ -5,11 +5,16 @@ const nombre = document.getElementById("name").value;
 const apellido = document.getElementById("lastname").value;
 const correo = document.getElementById("email").value;
 const age = document.getElementById("edad").value;
+// const er =
+//   /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;    
 const formValidacion = () => {
   console.log("formValidacion");
-        if (
-          nombre.length  < 3|| 
-          apellido.length < 3
+  
+  
+  if (
+          nombre.length  < 3 || 
+          apellido.length < 3 
+          // correo.target.type === er
                     
           ) {
             console.log("faliure");
@@ -17,10 +22,12 @@ const formValidacion = () => {
             msgName.innerHTML = "El nombre minimo tiene que contener 3 letras ";
            msgApellido.innerHTML =
              "El apellido minimo tiene que contener 3 letras ";
+             msgEmail.innerHTML ="correo no valido"
              }else{
               console.alert("success");
                msgName.innerHTML="";
             msgApellido.innerHTML="";
+            msgEmail.innerHTML ="";
              }
 
   }
